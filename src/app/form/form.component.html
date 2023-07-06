@@ -1,0 +1,33 @@
+<form>
+    <mat-form-field appearance="fill">
+        <mat-label>FirstName</mat-label>
+        <input matInput type="text" required [(ngModel)]="emptyUser.firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>LastName</mat-label>
+        <input matInput type="text" required [(ngModel)]="emptyUser.lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Id Number</mat-label>
+        <input matInput type="text" required [(ngModel)]="emptyUser.idNumber">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-select [(ngModel)]="emptyUser.gender">
+            <mat-label>male/female</mat-label>
+            <mat-option value="one">Male</mat-option>
+            <mat-option value="two">Female</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-select [(ngModel)]="emptyUser.HMO">
+            <mat-label>HMO</mat-label>
+            <mat-option value="one">Maccabi</mat-option>
+            <mat-option value="two">Meuhedet</mat-option>
+            <mat-option value="three">Klalit</mat-option>
+            <mat-option value="four">Leumit</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+
+    <input type="submit" (click)="save($event)" />
+</form>
